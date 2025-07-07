@@ -485,7 +485,7 @@ include_directories(BEFORE SYSTEM ${EIGEN3_INCLUDE_DIR})
 # no matter what.
 find_package(EXPAT REQUIRED)
 
-if (NOT CMAKE_SYSTEM_NAME STREQUAL "FreeBSD")
+if (NOT TARGET libexpat)
 add_library(libexpat INTERFACE)
 endif ()
 
